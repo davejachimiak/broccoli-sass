@@ -27,10 +27,10 @@ SassCompiler.prototype.updateCache = function(includePaths, destDir) {
     file: path.join(includePaths[0], this.inputFile),
     includePaths: includePaths,
 
-    imagePath: this.options.imagePath,
     outputStyle: this.options.outputStyle,
     precision: this.options.precision,
     sourceComments: this.options.sourceComments,
+    functions: this.options.functions
   }
 
   result = sass.renderSync(sassOptions)
