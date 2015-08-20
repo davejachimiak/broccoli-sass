@@ -29,7 +29,7 @@ var outputNode = new BroccoliSass(inputNodes, inputFile, outputFile, options);
 * **`outputFile`**: Relative path of the output CSS file.
 
 * **`options`**: A hash of options for libsass. Supported options are
-  `imagePath`, `outputStyle`, `precision`, and `sourceComments`.
+  `outputStyle`, `precision`, `sourceComments`, and `functions`.
 
 * **`annotation`**: A human-readable description, to tell multiple instances of
   this plugin apart.
