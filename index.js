@@ -30,10 +30,10 @@ SassCompiler.prototype.build = function() {
     file: path.join(this.inputPaths[0], this.inputFile),
     includePaths: this.inputPaths,
 
-    imagePath: this.options.imagePath,
     outputStyle: this.options.outputStyle,
     precision: this.options.precision,
     sourceComments: this.options.sourceComments,
+    functions: this.options.functions
   }
 
   result = sass.renderSync(sassOptions)
